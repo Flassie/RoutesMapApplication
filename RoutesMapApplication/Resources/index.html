@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        #map {
+            height: 100%;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script>
+        var map;
+        var markers = [];
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 36.896127, lng: 30.647341 },
+                zoom: 16
+            });
+        }
+
+        function setMarker(lat, lng, title) {
+            var marker = new google.maps.Marker({
+                position: { lat: lat, lng: lng },
+                map: map,
+                title: title
+            });
+
+            markers.push(marker);
+        }
+
+        function moveToLocation(lat, lng){
+            var center = new google.maps.LatLng(lat, lng);
+            map.panTo(center);
+        }
+        
+        function createPath() {
+            var pathCoords = [];
+
+            for(var i = 0; i < arguments.length; i++) {
+                var latlng = arguments[i].split("|");
+                var latitude = parseFloat(latlng[0]);
+                var longitude = parseFloat(latlng[1]);
+
+                pathCoords.push({ lat: latitude, lng: longitude });
+            }
+
+            alert(pathCoords[0].lat + "         -         " + pathCoords[1].lng);
+
+            var gpsPath = new google.maps.Polyline({
+                path: pathCoords,
+                geodesic: true,
+                strokeColor: '#FF0000',
+                strokeOpacity: 1.0,
+                strokeWeight: 2,
+                map: map
+            });
+        }
+    </script>
+    <script src="https://giswebsite.metc.state.mn.us/gisServices/Scripts/CoordinateConversion.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=geometry,drawing&key=AIzaSyD8DzrSXMvJom8OzmN9m09knqelabM47Tw&callback=initMap" async defer></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+c:\users\flassie\source\repos\RoutesMapApplication\RoutesMapApplication\bin\Debug\RoutesMapApplication.exe.config
+c:\users\flassie\source\repos\RoutesMapApplication\RoutesMapApplication\bin\Debug\RoutesMapApplication.exe
+c:\users\flassie\source\repos\RoutesMapApplication\RoutesMapApplication\bin\Debug\RoutesMapApplication.pdb
+c:\users\flassie\source\repos\RoutesMapApplication\RoutesMapApplication\obj\Debug\RoutesMapApplication.csprojResolveAssemblyReference.cache
+c:\users\flassie\source\repos\RoutesMapApplication\RoutesMapApplication\obj\Debug\RoutesMapApplication.Properties.Resources.resources
+c:\users\flassie\source\repos\RoutesMapApplication\RoutesMapApplication\obj\Debug\RoutesMapApplication.csproj.GenerateResource.Cache
+c:\users\flassie\source\repos\RoutesMapApplication\RoutesMapApplication\obj\Debug\RoutesMapApplication.csproj.CoreCompileInputs.cache
+c:\users\flassie\source\repos\RoutesMapApplication\RoutesMapApplication\obj\Debug\RoutesMapApplication.exe
+c:\users\flassie\source\repos\RoutesMapApplication\RoutesMapApplication\obj\Debug\RoutesMapApplication.pdb
+c:\users\flassie\source\repos\RoutesMapApplication\RoutesMapApplication\obj\Debug\RoutesMapApplication.SelectDatabaseForm.resources
+c:\users\flassie\source\repos\RoutesMapApplication\RoutesMapApplication\obj\Debug\RoutesMapApplication.RouteMap.resources
