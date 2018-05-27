@@ -55,8 +55,6 @@
                 pathCoords.push({ lat: latitude, lng: longitude });
             }
 
-            alert(pathCoords[0].lat + "         -         " + pathCoords[1].lng);
-
             var gpsPath = new google.maps.Polyline({
                 path: pathCoords,
                 geodesic: true,
